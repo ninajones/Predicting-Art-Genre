@@ -14,7 +14,8 @@ df.loc[df['years'].str.contains('- 16', na=False), 'years'] = "17th century"
 df.loc[df['years'].str.contains('- 17', na=False), 'years'] = "18th century" 
 df.loc[df['years'].str.contains('- 18', na=False), 'years'] = "19th century" 
 df.loc[df['years'].str.contains('– 18', na=False), 'years'] = "19th century" 
-df.loc[df['years'].str.contains('- 19', na=False), 'years'] = "20th century" df.loc[df['years'].str.contains('– 19', na=False), 'years'] = "20th century" 
+df.loc[df['years'].str.contains('- 19', na=False), 'years'] = "20th century" 
+df.loc[df['years'].str.contains('– 19', na=False), 'years'] = "20th century" 
 df.loc[df['years'].str.contains('- 20', na=False), 'years'] = "21st century"
 
 #Using regex, remove values after first comma in nationality and genre (strings are immutable so assign the reference to the result of string.replace) 
