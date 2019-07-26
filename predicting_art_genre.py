@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
  
 #read dataset
-df = pd.read_csv('../input/artists.csv')
+df = pd.read_csv('artists.csv')
 
 # convert years to centuries
 df.loc[df['years'].str.contains('- 13', na=False), 'years'] = "14th century" 
